@@ -198,6 +198,10 @@
   html {
     font-size: 62.5%;
   }
+  .user-container {
+    width: 50vw;
+    height: 45vh;
+  }
   .profile {
     margin-top: 1rem;
   }
