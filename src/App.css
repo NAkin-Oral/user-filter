@@ -1,38 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 70vh;
+  height: 60vh;
+  border-radius: 0.5rem;
+  border: 1px solid;
+  background: radial-gradient(#ebebd8, #9ac4e3);
+  box-shadow: 5px 5px 0px 0px #289fed, 0.625rem 0.625rem 0px 0px #5fb8ff,
+    1rem 1rem 0px 0px #a1d8ff, 1.25rem 1.25rem 0px 0px #cae6ff,
+    1.6rem 1.6rem 0px 0px #e1eeff, 5px 5px 1rem 5px rgba(40, 159, 237, 0);
+}
+
+.profile {
+  width: 100%;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 1rem 1rem 1rem 5rem;
+}
+
+.profile img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.profile h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 3.5rem;
+}
+
+.email,
+.phone,
+.location {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 1rem 1rem 1rem 12rem;
+}
+
+.email img,
+.phone img,
+.location img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.age {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.age p {
+  padding: 1rem;
+}
+
+.btn-random {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  background-color: #289fed;
   color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  transition: all 0.35s ease-in;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-random:hover {
+  background-color: #e9ebd9;
+  color: black;
 }
